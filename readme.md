@@ -9,4 +9,4 @@ $logsFolder = '/path_to_project/storage/logs/';
 - Access link `https://your.domain/log-viewer.php`
 
 ## Preview
-![](https://raw.githubusercontent.com/thaont540/laravel-log-viewer/master/demo.png)
+![](https://raw.githubusercontent.com/thaont540/laravel-log-viewer/master/demo1.png)
