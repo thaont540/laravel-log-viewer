@@ -1,9 +1,9 @@
 # Laravel log viewer
 
 ## How to use
-- Copy `log-viewer.php` file to your place what you want to run (example `public` folder)
-- Change line 3 to your logs project folder path:
-```diff
+- Copy `log-viewer.php` file to your place where you want to run (example `public` folder)
+- Change line 8 to your project logs folder path:
+```
 $logsFolder = '/path_to_project/storage/logs/';
 ```
 - Access link `https://your.domain/log-viewer.php`
