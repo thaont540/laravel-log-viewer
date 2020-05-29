@@ -222,6 +222,11 @@ class LogViewer
 
     function read($file)
     {
+        $fileName = realpath($this->logsFolder . $file);
+        if ($fileName === false || strncmp($fileName, $this->logsFolder, strlen($this->logsFolder)) !== 0) {
+            die('Missing file or not in the expected location');
+        }
+
         if (file_exists($this->logsFolder . $file)) {
             $this->rawLines = file($this->logsFolder . $file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             $this->formatLines();
