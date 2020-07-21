@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Laravel Simple Log Viewer : laravel log viewer">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Laravel Simple Log Viewer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/thaont540/laravel-log-viewer">View on GitHub</a>
+
+          <h1 id="project_title">Laravel Simple Log Viewer</h1>
+          <h2 id="project_tagline">laravel log viewer</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/thaont540/laravel-log-viewer/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/thaont540/laravel-log-viewer/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="laravel-log-viewer" class="anchor" href="#laravel-log-viewer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Laravel log viewer</h1>
+<h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h2>
+<ul>
+<li>Copy <code>log-viewer.php</code> file to your place where you want to run (example <code>public</code> folder)</li>
+<li>Change line 8 to your project logs folder path:</li>
+</ul>
+<pre><code>$logsFolder = '/path_to_project/storage/logs/';
+</code></pre>
+<ul>
+<li>Access link <code>https://your.domain/log-viewer.php</code>
+</li>
+</ul>
+<p><em>Note</em>: the <code>LOG_CHANNEL</code> is set to <code>daily</code> instead of <code>stack</code> in your .env file is the best. (<code>APP_LOG=daily</code> for Laravel 5.5 and below)</p>
+<h2>
+<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview</h2>
+<p><img src="https://raw.githubusercontent.com/thaont540/laravel-log-viewer/master/demo1.png" alt=""></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Laravel Simple Log Viewer maintained by <a href="https://github.com/thaont540">thaont540</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
