@@ -8,11 +8,11 @@
 $logsFolder = '/path_to_project/storage/logs/';
 $logViewer = new LogViewer($logsFolder);
 
-if ($date = $_GET['date']) {
+if (isset($_GET['date']) && $date = $_GET['date']) {
     $logViewer->read($date);
 }
 
-if ($file = $_GET['download']) {
+if (isset($_GET['download']) && $file = $_GET['download']) {
     $logViewer->download($file);
 }
 ?>
